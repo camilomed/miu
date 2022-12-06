@@ -1,37 +1,35 @@
 package sixClass;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class fiveExcercise {
 	
-	public static void main(String[] args) {
 		
-		listPets();
+		public static void main(String[] args) {
+			listPets();
+		}
 		
-	}
-	
 	
 	
 	public static void listPets() {
 		
-		ArrayList<String[] > pets = new ArrayList<String[]>();
+		Pets  mascota ;
+		ArrayList<Pets> listPets = new ArrayList<Pets>();
 		String petType="";
 		String petName="";
 		Scanner sc = new Scanner(System.in);
 		while(!petType.equals("stop")) {
 			System.out.println("write cat or dog to list the pets and write stop to stop the program");
 			petType=sc.nextLine();
-			String[] nameType = new  String[2];
 			
 			switch (petType) {
 			case "cat": {
 				System.out.println("write the name of the pet");
 				petName=sc.nextLine();
 				
-				nameType[0]= petName;
-				nameType[1]= "c";
-				pets.add(nameType);
+				  mascota = new Pets(petName, "c");
 				
 				break;
 			}
@@ -39,9 +37,7 @@ public class fiveExcercise {
 				System.out.println("write the name of the pet");
 				petName=sc.nextLine();
 				
-				nameType[0]= petName;
-				nameType[1]= "d";
-				pets.add(nameType);
+				mascota = new Pets(petName, "d");
 				break;
 			}
 			case "stop":{
@@ -55,9 +51,9 @@ public class fiveExcercise {
 			
 			
 		}
-		for(int i=0;i<pets.size();i++) {
+		for(int i=0;i<listPets.size();i++) {
 			
-			System.out.println("name : "+pets.get(i)[0] + "   type : "+ pets.get(i)[1]);
+			System.out.println("name : "+listPets.get(i).name + "   type : "+ listPets.get(i).type);
 		}
 		
 		

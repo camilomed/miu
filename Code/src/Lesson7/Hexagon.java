@@ -7,13 +7,13 @@ public class Hexagon extends Shape implements Drawable,ColoredPrintable {
 	
 	@Override
 	public void print() {
-		System.out.println("Prting the " + super.color + " Hexagon");
+//		System.out.println("Prting the " + super.color + " Hexagon");
 		
 	}
 
 	@Override
 	public void coloredprint() {
-		System.out.println("Prting the " + super.color + " Hexagon using colored ink");
+//		System.out.println("Prting the " + super.color + " Hexagon using colored ink");
 		
 	}
 

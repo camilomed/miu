@@ -26,13 +26,13 @@ return -1;
 public class TestSort3{  
 public static void main(String args[]){  
 ArrayList<Comparable> al=new ArrayList<Comparable>();  
-al.add(new Comparable(101,"Vijay",23));  
-al.add(new Comparable(106,"Ajay",27));  
-al.add(new Comparable(105,"Jai",21));  
-  
+//al.add(new Comparable(101,"Vijay",23));  
+//al.add(new Comparable(106,"Ajay",27));  
+//al.add(new Comparable(105,"Jai",21));  
+//  
 Collections.sort(al);  
 for(Comparable st:al){  
-System.out.println(st.rollno+" "+st.name+" "+st.age);  
+//System.out.println(st.rollno+" "+st.name+" "+st.age);  
 }  
 }  
 }  

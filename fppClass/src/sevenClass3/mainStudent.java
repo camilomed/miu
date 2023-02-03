@@ -3,12 +3,15 @@ package sevenClass3;
 import java.util.Arrays;
 import java.util.Comparator;
 
+import javax.swing.JButton;
+
 
 public class mainStudent  {
 	
 	public static void main(String[] args) {
 		listStudent();
 	}
+	
 
 	private static void listStudent() {
 		Student [] st= new Student[4];

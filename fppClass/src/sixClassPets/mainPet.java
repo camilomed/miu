@@ -27,7 +27,7 @@ public class mainPet {
 		String color ="";
 		double weight;
 		
-		while(!petType.equals("stop")) {
+		while(!"stop".equals(petType)) {
 			System.out.println("write cat or dog to list the pets and write stop to stop the program");
 			petType=sc.nextLine();
 			

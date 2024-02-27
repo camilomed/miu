@@ -20,7 +20,7 @@ public class fiveExcercise {
 		String petType="";
 		String petName="";
 		Scanner sc = new Scanner(System.in);
-		while(!petType.equals("stop")) {
+		while(!"stop".equals(petType)) {
 			System.out.println("write cat or dog to list the pets and write stop to stop the program");
 			petType=sc.nextLine();
 			

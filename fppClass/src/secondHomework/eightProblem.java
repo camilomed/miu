@@ -23,7 +23,7 @@ public class eightProblem {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Fortune (Y/N)?");
 		answer= sc.nextLine();
-		while (answer.equals("Y")) {
+		while ("Y".equals(answer)) {
 			Random r = new Random();
 			int random = r.nextInt(4) ;
 			System.out.println(fortune.get(random));

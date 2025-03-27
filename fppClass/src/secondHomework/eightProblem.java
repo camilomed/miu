@@ -1,5 +1,6 @@
 package secondHomework;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -24,7 +25,7 @@ public class eightProblem {
 		System.out.println("Fortune (Y/N)?");
 		answer= sc.nextLine();
 		while (answer.equals("Y")) {
-			Random r = new Random();
+			Random r = new SecureRandom();
 			int random = r.nextInt(4) ;
 			System.out.println(fortune.get(random));
 			System.out.println("Fortune (Y/N)?");

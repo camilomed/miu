@@ -1,5 +1,6 @@
 package secondHomework;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class sevenQuestion {
@@ -8,7 +9,7 @@ public class sevenQuestion {
 		
 		int [] days = new int [365];
 		for(int i=0; i<365;i++) {
-			Random r = new Random();
+			Random r = new SecureRandom();
 			days[i] = r.nextInt(70) - 20;
 		}
 		printTemperatures(days);
